@@ -1,0 +1,43 @@
+<html>
+	<head>
+	
+	<script>
+	function display(x)
+	{	
+		if (x=="=")
+			document.getElementById("console").innerHTML += document.getElementById("screen").value + ", ";
+		else if (x=="-")	
+			clear();		
+		else
+			document.getElementById("screen").value+=x;
+	}
+	function clear()
+	{
+		document.getElementById("screen").value =""
+	}
+	
+	</script>
+	
+	</head>
+	<body bgcolor="#645986"><br>
+	<center>
+		<input style="background-color:#e7d6b5;height:75px;width:75px;font-size:60px" name="D" id="D" type=button value="D" onclick="display('D')" />
+		<input style="background-color:#e7d6b5;height:75px;width:75px;font-size:60px" name="E" id="E" type=button value="E" onclick="display('E')" />
+		<input style="background-color:#e7d6b5;height:75px;width:75px;font-size:60px" name="M" id="M" type=button value="M" onclick="display('M')" />
+		<input style="background-color:#e7d6b5;height:75px;width:75px;font-size:60px" name="O" id="O" type=button value="O" onclick="display('O')" />
+		<input style="background-color:#e7d6b5;height:75px;width:75px;font-size:60px" name="N" id="N" type=button value="N" onclick="display('N')" />
+		<input style="background-color:#e7d6b5;height:75px;width:75px;font-size:60px" name="S" id="S" type=button value="S" onclick="display('S')" />
+		<input style="background-color:#e7d6b5;height:75px;width:75px;font-size:60px" name="T" id="T" type=button value="T" onclick="display('T')" />
+		<input style="background-color:#e7d6b5;height:75px;width:75px;font-size:60px" name="R" id="R" type=button value="R" onclick="display('R')" />
+		<input style="background-color:#e7d6b5;height:75px;width:75px;font-size:60px" name="A" id="A" type=button value="A" onclick="display('A')" />
+		<input style="background-color:#e7d6b5;height:75px;width:75px;font-size:60px" name="T" id="T" type=button value="T" onclick="display('T')" />
+		<input style="background-color:#e7d6b5;height:75px;width:75px;font-size:60px" name="I" id="I" type=button value="I" onclick="display('I')" />
+		<input style="background-color:#e7d6b5;height:75px;width:75px;font-size:60px" name="O" id="O" type=button value="O" onclick="display('O')" />
+		<input style="background-color:#e7d6b5;height:75px;width:75px;font-size:60px" name="N" id="N" type=button value="N" onclick="display('N')" /><br><br>
+		<input style="background-color:#d1d3dc;height:60px;width:710px;font-size:50px" name="screen" id="screen" placeholder="  Click the letters to form words" /> <br><br>
+		<input style="background-color:#d1d3dc;height:45px;font-size:30px" name="word" id="word" type=button value="Click to display the new word!" onclick="display('=')" />
+		<input style="background-color:#d1d3dc;height:45px;font-size:30px" name="clear" id="clear" type=button value="Click to clear the box" onclick="display('-')" /><br>
+	</center>
+		<p id="console" style="font-size:25px"/>
+	</body>
+</html>
